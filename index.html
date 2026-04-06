@@ -1,2 +1,115 @@
-<h1>Hello Harvard</h1>
-<h1>youmna future student in Harfard</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yassine | Road to Harvard</title>
+    <!-- استيراد خطوط جوجل لتصميم أجمل -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --harvard-crimson: #A51C30; /* لون هارفارد الرسمي */
+            --dark-blue: #002147;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .profile-card {
+            background: white;
+            width: 350px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 10px solid var(--harvard-crimson);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+
+        h1 {
+            color: var(--dark-blue);
+            margin-bottom: 5px;
+            font-size: 1.8rem;
+        }
+
+        .subtitle {
+            color: var(--harvard-crimson);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            color: #666;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skill-tag {
+            background: #eee;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background-color: var(--harvard-crimson);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-contact:hover {
+            background-color: #821627;
+            box-shadow: 0 5px 15px rgba(165, 28, 48, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <h1>Future Student</h1>
+        <div class="subtitle">Mathematical Sciences | 1ère Bac</div>
+        <p class="bio">
+            Passionate about Mathematics and Computer Science. Currently building my path from Morocco to <b>Harvard University</b>.
+        </p>
+        
+        <div class="skills">
+            <span class="skill-tag">Math</span>
+            <span class="skill-tag">Coding</span>
+            <span class="skill-tag">Physics</span>
+        </div>
+
+        <a href="https://harvard.edu" target="_blank" class="btn-contact">Learn About My Dream</a>
+    </div>
+
+</body>
+</html>
+
